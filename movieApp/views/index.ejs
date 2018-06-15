@@ -1,0 +1,18 @@
+<% include head %>
+  <body>
+      <div class="container">
+      	 <div class="row">
+      	 	 <div class = "col-sm-12 movies">
+
+      	 	 	<% for(let i = 0; i < nowPlayingData.length;i++){%>
+
+      	 	 		<div class="col-sm-3">
+      	 	 			<a href="/movie/<%= nowPlayingData[i].id%>"><img src="<%=imageBaseUrl+ nowPlayingData[i].poster_path%>"/></a>
+      	 	 		</div>
+      	 	 	<%}%>
+      	 	 		
+      	 	 </div>
+      	 </div>
+      </div>
+  </body>
+</html>

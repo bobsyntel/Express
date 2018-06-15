@@ -1,0 +1,25 @@
+<% include head %>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<ul class="nav nav-tabs">
+					  <li role="presentation" class="active"><a href="/">Home</a></li>
+					  <li role="presentation"><a data-profile href="#">Profile</a></li>
+					  <li role="presentation"><a href="#">Messages</a></li>
+				</ul>
+				<h1>
+				<%= currentMovie.title %>
+				</h1>
+				<img src = "<%= imageBaseUrl + currentMovie.poster_path%>"/>
+				<h2>The budget for this movie was :$<%= currentMovie.budget %> </h2>
+				
+				<p>
+					<%= currentMovie.overview %>
+				</p>
+			</div>
+		</div>
+	</div>
+		
+</body>
+</html>
